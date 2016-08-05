@@ -1,0 +1,25 @@
+Conditional CSS Target Specific Browser:
+
+FF
+
+@-moz-document url-prefix() {
+  .selector {
+    color:lime;
+  }
+}
+
+
+Webkit based: chrome, safari
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+/* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */  
+  body { background:#ccc; }  
+}
+
+
+
+MS-Edge:
+
+@supports (-ms-accelerator:true) {
+your styles for MS Edge
+}
